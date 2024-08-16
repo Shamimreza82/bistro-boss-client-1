@@ -1,15 +1,17 @@
-import React from 'react';
 
-const MenuItem = ({item}) => {
-    const{name, image, price, recipe} = item
+const MenuItem = ({ item }) => {
+    const { name, image, price, recipe } = item
     return (
-        <div>
-            <img src={image} alt="" />
+        <div className="flex p-4 ">
+            <img className="w-[150px]  m-3" src={image} alt="" />
             <div>
-                <h3>{name}</h3>
+                <div className="flex justify-between items-center">
+                    <h3 className="lg:text-xl py-2">{name}  ..............</h3>
+                    <p className="font-bold text-yellow-600" >${price}</p>
+                </div>
                 <p>{recipe}</p>
-                <p>{price}</p>
             </div>
+
         </div>
     );
 };

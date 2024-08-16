@@ -13,7 +13,8 @@ import img3 from '../../../assets/home/03.png'
 
 const Banner = () => {
     return (
-        <Carousel  axis="horizontal" >
+        <div className="">
+            <Carousel  axis="horizontal" >
                 <div>
                 <img src={img1} />
                 </div>
@@ -33,6 +34,7 @@ const Banner = () => {
                 <img src={img6} />
                 </div> */}
             </Carousel>
+        </div>
     );
 };
 
